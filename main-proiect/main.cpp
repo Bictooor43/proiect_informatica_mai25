@@ -99,6 +99,7 @@ void prelucrare_s2(elem *&prim)
         if(p -> poz == n-1)
         {
             elem *t = p -> urm;
+            ultim = p;
             p -> urm = t -> urm;
             delete t;
         }
